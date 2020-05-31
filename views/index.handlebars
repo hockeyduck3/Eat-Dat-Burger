@@ -1,0 +1,31 @@
+<h1>You should really eat da burger fam!</h1>
+
+<div class="container">
+    <div class="row">
+        <!-- Burgers that have not been devoured -->
+        <div class="col-md-6">
+            <ul>
+            {{#each burgers}}
+                {{#unless devoured}}
+                    <li>
+                        {{ burger_name }}
+                    </li>
+                {{/unless}}
+            {{/each}}
+            </ul>
+        </div>
+
+        <!-- Burgers that have been devoured -->
+        <div class="col-md-6">
+            <ul>
+                {{#each burgers}}
+                    {{#if devoured}}
+                        <li>
+                            {{burger_name}}
+                        </li>
+                    {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
