@@ -1,6 +1,7 @@
-<h1>You should really eat da burger fam!</h1>
+<h1>Eat Dat Burger fam!</h1>
 
 <div class="container">
+    <!-- Burger lists -->
     <div class="row">
         <!-- Burgers that have not been devoured -->
         <div class="col-md-6">
@@ -36,6 +37,23 @@
                     {{/if}}
                 {{/each}}
             </ul>
+        </div>
+    </div>
+
+    <!-- Add new burger -->
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Add a new burger!</h1>
+
+            <form action="/burger" method="post" class="newBurgerInfo">
+                <div class="input-group">
+                    <input type="text" class="burgerInput" name="burger_name" placeholder="Type in the name of a burger">
+                
+                    <div class="input-group-append">
+                        <button type="submit" class="addBurger">Add Burger!</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>
