@@ -4,11 +4,15 @@
     <div class="row">
         <!-- Burgers that have not been devoured -->
         <div class="col-md-6">
+            <p>Click on the burger name to DEVOUR IT!</p>
+
             <ul>
             {{#each burgers}}
                 {{#unless devoured}}
                     <li>
-                        {{ burger_name }}
+                        <button class="devourBtn btn btn-dark" data-id="{{id}}" type="button">
+                            {{ burger_name }}
+                        </button>             
                     </li>
                 {{/unless}}
             {{/each}}
@@ -17,11 +21,17 @@
 
         <!-- Burgers that have been devoured -->
         <div class="col-md-6">
+            <p>Click on the trash icon to delete a burger.</p>
+
             <ul>
                 {{#each burgers}}
                     {{#if devoured}}
                         <li>
                             {{burger_name}}
+                            
+                            <button class="deleteBtn">
+                                <i class="fas fa-trash"></i>
+                            </button>
                         </li>
                     {{/if}}
                 {{/each}}
