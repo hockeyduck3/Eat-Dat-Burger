@@ -58,9 +58,9 @@ p {
 }
 
 .burgerInput {
-    border-bottom-right-radius: 0;
     border-radius: 50rem;
     border-right: 0;
+    border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     border: 1px black solid;
     font-size: 20px;
@@ -78,4 +78,8 @@ p {
     font-size: 20px;
     height: 4rem;
     width: 200px;
+}
+
+.burgerInput:focus, .addBurger:focus {
+    outline: none;
 }

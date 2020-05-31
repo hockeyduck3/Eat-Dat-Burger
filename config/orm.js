@@ -15,11 +15,13 @@ const orm = {
         );
     },
 
-    insertOne: function(table, name, cb) {
-        let querySearch = `INSERT INTO ${table} VALUES(${name}, false)`;
+    insertOne: function(col, val, cb) {
+        let querySearch = `INSERT INTO burgers (${col}) VALUES (?)`;
 
         connection.query(
             querySearch,
+
+            val,
             
             function(err, data) {
                 if (err) throw err;

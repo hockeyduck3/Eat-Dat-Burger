@@ -16,15 +16,15 @@ router.get('/', function(req, res) {
 router.post('/burger', function(req, res) {
     burger.insertOne(
     [
-        'name'
+        'burger_name',
     ], 
     
     [
-        req.body.name
-    ], 
+        req.body.burger_name,
+    ],
     
-    function(result) {
-        console.log(result);
+    function(data) {
+        res.sendStatus(200).end();
     });
 });
 
