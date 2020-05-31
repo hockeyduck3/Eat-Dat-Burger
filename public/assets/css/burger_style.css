@@ -1,5 +1,26 @@
+/* Without the !important the body will ignore the background color */
+html, body {
+    background-color: antiquewhite !important;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1, li, ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
 #catBurger {
     display: block;
-    margin: 0 auto;
-    width: 200px;
+    margin: 40px auto;
+    width: 250px;
+}
+
+.col-md-6 {
+    font-size: 25px;
+    margin-top: 30px;
 }
