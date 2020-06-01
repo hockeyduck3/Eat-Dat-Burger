@@ -43,6 +43,20 @@ const orm = {
                 cb(data);
             }
         );
+    },
+
+    deleteOne: function(id, cb) {
+        let querySearch = `DELETE FROM burgers WHERE id="${id}"`;
+
+        connection.query(
+            querySearch,
+
+            function(err, data) {
+                if (err) throw err;
+
+                cb(data);
+            }
+        );
     }
 }
 

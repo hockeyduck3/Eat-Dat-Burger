@@ -50,6 +50,17 @@ $('.newBurgerInfo').on('submit', function(event) {
     });
 });
 
+// When the user clicks on the trash icon next to a burger
+$('.deleteBtn').click(function() {
+    let id = $(this).data('id');
+   
+    $.ajax(`/burgers/${id}`, {
+        type: 'DELETE',
+    }).then(function(data) {
+        location.reload();
+    });
+});
+
 // Function for displaying any error from the field validation
 function displayError() {
     $('.error').slideUp('fast');

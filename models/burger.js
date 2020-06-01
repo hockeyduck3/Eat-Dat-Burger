@@ -17,6 +17,12 @@ const burger = {
         orm.updateOne(burgers, whereVal, id, function(results) {
             cb(results);
         });
+    },
+
+    deleteOne: function(id, cb) {
+        orm.deleteOne(id, (confirm) => {
+            cb(confirm)
+        })
     }
 }
 
