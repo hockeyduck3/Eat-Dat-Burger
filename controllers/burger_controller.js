@@ -29,16 +29,17 @@ router.post('/burger', function(req, res) {
 });
 
 router.put('/burgers/:id', function(req, res) {
-    let condition = `id = ${req.params.id}`;
+    let condition = req.params.id;
 
     burger.updateOne(
-    {
-        devoured: true
-    }, 
-    
-    condition, function(data) {
-        console.log(data);
-    });
+        {
+            devoured: true
+        },  
+        
+        condition, function(data) {
+            res.sendStatus(200).end();
+        }
+    );
 });
 
 router.delete('/burgers/:id', function(req, res) {

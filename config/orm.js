@@ -31,8 +31,8 @@ const orm = {
         );
     },
 
-    updateOne: function(table, where, id, cb) {
-        let querySearch = `UPDATE ${table} WHERE ${where} = ${id}`;
+    updateOne: function(val, id, cb) {
+        let querySearch = `UPDATE burgers SET devoured=${val} WHERE id = ${id}`;
 
         connection.query(
             querySearch,

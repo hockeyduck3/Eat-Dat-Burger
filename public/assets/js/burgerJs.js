@@ -50,6 +50,22 @@ $('.newBurgerInfo').on('submit', function(event) {
     });
 });
 
+// When the user clicks on a burger name
+$('.devourBtn').click(function() {
+    let id = $(this).data('id');
+
+    let devourState = {
+        devoured: true
+    }
+
+    $.ajax(`/burgers/${id}`, {
+        method: 'PUT',
+        data: devourState
+    }).then(function(data) {
+        location.reload();
+    })
+})
+
 // When the user clicks on the trash icon next to a burger
 $('.deleteBtn').click(function() {
     let id = $(this).data('id');

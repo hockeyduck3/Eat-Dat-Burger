@@ -13,8 +13,10 @@ const burger = {
         });
     },
 
-    updateOne: function(burgers, whereVal, idVal, cb) {
-        orm.updateOne(burgers, whereVal, id, function(results) {
+    updateOne: function(val, id, cb) {
+        let devoured = val.devoured;
+
+        orm.updateOne(devoured, id, function(results) {
             cb(results);
         });
     },
