@@ -127,7 +127,8 @@ footer {
     font-family: 'Caveat', cursive;
     font-size: 22px;
     height: 4.6rem;
-    margin-top: auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
     text-align: center;
     width: 100%;
 }
@@ -145,6 +146,14 @@ a:hover {
     color: #444;
     text-decoration: none;
     transition: ease-in-out .15s;
+}
+
+.pusheen:hover {
+    color: #fbc;
+}
+
+.fa-ice-cream {
+    padding-left: 10px;
 }
 
 
@@ -174,6 +183,10 @@ a:hover {
         font-size: 20px;
         width: 100%;
         padding-right: 10px;
+    }
+
+    footer {
+        margin-top: 18px;
     }
 }
 
