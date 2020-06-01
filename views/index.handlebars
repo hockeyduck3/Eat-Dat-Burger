@@ -4,8 +4,8 @@
     <!-- Burger lists -->
     <div class="row">
         <!-- Burgers that have not been devoured -->
-        <div class="col-md-6">
-            <p>Click on the burger name to DEVOUR IT!</p>
+        <div class="col-lg-6">
+            <h2>Burgers to DEVOUR!</h2>
 
             <ul>
             {{#each burgers}}
@@ -21,8 +21,8 @@
         </div>
 
         <!-- Burgers that have been devoured -->
-        <div class="col-md-6">
-            <p>Click on the trash icon to delete a burger.</p>
+        <div class="col-lg-6">
+            <h2>Devoured burgers</h2>
 
             <ul>
                 {{#each burgers}}
@@ -42,8 +42,12 @@
 
     <!-- Add new burger -->
     <div class="row">
-        <div class="col-md-12">
-            <h1>Add a new burger!</h1>
+        <div class="col-lg-12">
+            <div class="error">
+                <h1 class="newBurgerH1">Add a new burger!</h1>
+
+                <img src="/assets/img/download.png" alt="Pusheen cat looking upset about an error" class="hide errorCat">
+            </div>
 
             <form class="newBurgerInfo">
                 <div class="input-group">

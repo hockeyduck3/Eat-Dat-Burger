@@ -10,11 +10,11 @@ html, body {
     box-shadow: 0px 6px 10px -3px #444;
     border: 3px black solid;
     display: block;
-    margin: 40px auto;
+    margin: 15px auto;
     width: 350px;
 }
 
-h1, li, ul {
+h1, h2, li, ul {
     list-style: none;
     margin-top: 20px;
     padding: 0;
@@ -22,9 +22,10 @@ h1, li, ul {
     text-decoration: none;
 }
 
-p {
-    font-size: 18px;
-    text-align: center;
+h2 {
+    border-bottom: 2px black solid;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
 }
 
 .btn {
@@ -40,21 +41,21 @@ p {
     outline:none; 
 }
 
-.col-md-6 {
+.col-lg-6 {
     font-size: 25px;
     margin-top: 30px;
 }
 
 /* Add a Burger */
 
-.col-md-12 {
-    margin-top: 50px;
+.col-lg-12 {
+    margin-top: 30px;
 }
 
 .input-group {
     justify-content: center;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .burgerInput {
@@ -63,6 +64,7 @@ p {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     border: 1px black solid;
+    border-right: 0px;
     font-size: 20px;
     height: 4rem;
     padding-left: 25px;
@@ -74,6 +76,7 @@ p {
     border-bottom-right-radius: 50rem;
     border-top-right-radius: 50rem;
     border: 1px black solid;
+    border-left: 0px;
     color: white;
     font-size: 20px;
     height: 4rem;
@@ -82,4 +85,13 @@ p {
 
 .burgerInput:focus, .addBurger:focus {
     outline: none;
+}
+
+.errorCat {
+    display: block;
+    margin: 5px auto;
+}
+
+.hide {
+    display: none;
 }
