@@ -42,7 +42,7 @@ h2 {
     border-radius: 50rem;
     border: 2px black solid;
     font-size: 25px;
-    width: 450px;
+    width: 80%;
     padding-bottom: 10px;
 }
 
@@ -145,4 +145,55 @@ a:hover {
     color: #444;
     text-decoration: none;
     transition: ease-in-out .15s;
+}
+
+
+/* Media */
+
+/* Most phones */
+@media (max-width: 700px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #catBurger {
+        width: 285px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .burgerInput {
+        font-size: 13px;
+        width: 60%;
+        padding-left: 8px;
+    }
+
+    .addBurger {
+        font-size: 20px;
+        width: 100%;
+        padding-right: 10px;
+    }
+}
+
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+    
+    .btn, li {
+        font-size: 18px;
+    }
+
+    .burgerInput {
+        width: 66%;
+        padding-left: 2px;
+    }
 }
