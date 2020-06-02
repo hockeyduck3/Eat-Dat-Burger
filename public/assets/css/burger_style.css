@@ -114,6 +114,7 @@ h2 {
 .errorCat {
     display: block;
     margin: 5px auto;
+    width: 263px;
 }
 
 .hide {
