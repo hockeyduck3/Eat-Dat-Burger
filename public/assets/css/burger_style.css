@@ -38,7 +38,7 @@ h2 {
 }
 
 .btn, li {
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .btn {
@@ -179,7 +179,7 @@ a:hover {
     }
 
     .burgerInput {
-        font-size: 20px;
+        font-size: 18px;
         width: 70%;
         padding-left: 8px;
     }
@@ -207,10 +207,11 @@ a:hover {
     }
     
     .btn, li {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .burgerInput {
+        font-size: 15px;
         width: 68%;
         padding-left: 5px;
     }
