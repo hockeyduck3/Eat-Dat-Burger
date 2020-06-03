@@ -10,12 +10,10 @@ var errorArr = [
     {
         text: 'There\'s nothing there...',
         pic: 'pusheen-disappointed.png',
-        alt: 'Pusheen the cat is looking disappointed...'
     },
     {
         text: 'You typed nothing...',
         pic: 'pusheen-upset.png',
-        alt: 'Pusheen the cat is looking upset'
     },
     {
         text: 'I am disappointed.',
@@ -146,6 +144,7 @@ $('.deleteBtn').click(function() {
 // Function for displaying any error from the field validation
 function displayError() {
     var emotion;
+    var scroll;
 
     // Depending on which picture will be displayed, this will update the emotion in the alt attribute.
     // This is mainly for those who are using screen readers on the site
@@ -186,15 +185,16 @@ function displayError() {
         setTimeout(function() {
             $('.error').slideDown('fast');
 
-            // This will make it so that the screen doesn't scroll all the way to the bottom if the no numbers error occurs
+            // This will make it so that the screen doesn't scroll all the way to the bottom if the 'no numbers' error occurs
             // This is because the image for the no numbers error is taller than all the other image's
             if (errorMessage.text === 'No numbers allowed.') {
-                $('html, body').animate({scrollTop: 800}, 'fast');
+                scroll = 800;
             } else {
-                $('html, body').animate({scrollTop: $(document).height()}, 'fast');
+                scroll = 920;
             }
             
-        }, 250);
+            $('html, body').animate({scrollTop: scroll}, 'fast');
+        }, 300);
 
     }, 300);
 }
