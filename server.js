@@ -24,4 +24,4 @@ server.use(routes);
 // Start the server
 server.listen(PORT, () => {
     console.log(`Server up and running on http://localhost:${PORT}`);
-})
+});
